@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   
-  nombre:string = "Nombre de usuario";
+  nombre:string = "Pedroo";
 
   cambiarNombre(){
-    this.nombre="Cambiando nombre ga"
+    this.nombre="Cambiando a Juan"
   }
 }

@@ -8,5 +8,8 @@
     Cambiar nombre
   </button>
   <hr>
-  <app-hijo></app-hijo>
+  <app-hijo
+    [nombreHijo]="nombre"
+    (cambioNombreHijo)="nombre=$event"
+  ></app-hijo>
 </div>
