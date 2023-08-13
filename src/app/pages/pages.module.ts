@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
+import { TodoComponent } from './todo/todo.component';
+import { FormsModule } from '@angular/forms'; // Agrega esta importación
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    TodoComponent
   ],
   imports: [
+    FormsModule,
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
   ]
 })
 export class PagesModule { }
