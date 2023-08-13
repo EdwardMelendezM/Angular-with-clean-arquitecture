@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HijoComponent } from './hijo/hijo.component';
+import { TodoComponent } from './todo/todo.component';
+import { FormsModule } from '@angular/forms';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 
 
@@ -10,15 +13,20 @@ import { HijoComponent } from './hijo/hijo.component';
   declarations: [
     NavbarComponent,
     FooterComponent,
-    HijoComponent
+    HijoComponent,
+    TodoComponent,
+    TodoListComponent
   ],
   imports: [
-    CommonModule
+    FormsModule,
+    CommonModule,
   ],
   exports:[
     NavbarComponent,
     FooterComponent,
-    HijoComponent
+    HijoComponent,
+    TodoComponent,
+    TodoListComponent
   ]
 })
 export class ComponentsModule { }

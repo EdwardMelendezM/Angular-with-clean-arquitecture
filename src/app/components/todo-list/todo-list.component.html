@@ -1,0 +1,32 @@
+
+<div class="flex flex-col gap-y-3 bg-gray-400 mt-6 px-8 py-6 w-[350px] rounded-xl">
+  <div
+    class="flex gap-x-2 items-center justify-between"
+    *ngFor="let item of dataList; let i = index; trackBy:trackByFn"
+  >
+    <div
+      class="w-full"
+      *ngIf="!item.editing else editTemplate">
+      {{item.text}}
+    </div>
+    <ng-template #editTemplate>
+      <input
+        type="text"
+        [(ngModel)]="item.text"
+        class="border rounded-md w-full px-2 py-1">
+    </ng-template>
+    <div class="flex gap-x-1">
+      <button
+        *ngIf="!item.editing"
+        (click)="onDelete.emit(item.id)"
+        class="px-2 py-1 bg-red-600 text-white rounded-lg hover:bg-red-500 transition ">
+        Eliminar
+      </button>
+      <button
+        (click)="isEditing.emit(item)"
+        class="px-2 py-1 bg-green-600 text-white rounded-lg hover:bg-green-500 transition ">
+        {{item.editing ? "Guardar" : "Editar"}}
+      </button>
+    </div>
+  </div>
+</div>

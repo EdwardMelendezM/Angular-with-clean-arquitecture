@@ -1,0 +1,14 @@
+<div class="mt-11 px-12 flex gap-x-6">
+  <input
+    type="text"
+    class="px-4 py-2 rounded outline-none text-gray-700" placeholder="Quiero mimir"
+    [value]="inputValue"
+    (input)="onInput($event)"
+    >
+  <button
+    (click)="onAdd.emit()"
+    class="px-4 py-2 bg-gray-700 rounded-xl hover:bg-gray-500 transition text-gray-100"
+  >
+    Agregar
+  </button>
+</div>

@@ -39,6 +39,13 @@ export class TodoComponent {
     this.dataList = [...this.dataList, newTodo]
     this.inputValue=''
   }
+  isEditing(item:any){
+    item.editing=!item.editing
+    if(!item.editing){
+      console.log("Se cambio gaaa")
+    }
+  }
+
 
   onDelete(id:string){
     if(this.dataList.length==1) return 
