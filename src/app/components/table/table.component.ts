@@ -6,7 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
-  @Input() users:any
+  @Input() users: any
+  @Input() originalUsers: any
+
   order:string = "asc"
 
   sortTableByAge(){
@@ -21,7 +23,14 @@ export class TableComponent {
   }
 
   performSearch(term:string){
-    this.users = this.users.filter((user:any)=>user.name.first.toLowerCase().includes(term.toLowerCase()))
+
+    if(term===""){
+      this.users=this.originalUsers
+    }
+    else{
+      this.users = this.originalUsers.filter((user: any) => user.name.first.toLowerCase().includes(term.toLowerCase()) || user.email.toLowerCase().includes(term.toLowerCase()))
+    }
+  
   }
 
 }

@@ -9,8 +9,10 @@ export class TableInputComponent {
   @Output() search = new EventEmitter<string>()
 
   onSearch(event:any){
-    const term = event?.target.value
-    this.search.emit(term)
+    const term = event?.target?.value as string
+    if(term){
+      this.search.emit(term)
+    }
   }
 
 }
