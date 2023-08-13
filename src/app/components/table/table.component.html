@@ -1,4 +1,7 @@
-<div class="w-full overflow-x-auto mt-11">
+<div class="w-full overflow-x-auto mt-11 rounded-xl">
+  <app-table-input
+    (search)="performSearch($event)"
+  ></app-table-input>
   <table class="min-w-full bg-white border rounded-lg shadow-md">
     <thead>
       <tr class="bg-gray-100 text-gray-600 uppercase text-xs leading-normal">

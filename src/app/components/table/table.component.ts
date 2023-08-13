@@ -20,4 +20,8 @@ export class TableComponent {
     this.order= this.order==="asc"?"desc":"asc"
   }
 
+  performSearch(term:string){
+    this.users = this.users.filter((user:any)=>user.name.first.toLowerCase().includes(term.toLowerCase()))
+  }
+
 }

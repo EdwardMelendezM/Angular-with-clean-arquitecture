@@ -7,6 +7,7 @@ import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TableComponent } from './table/table.component';
+import { TableInputComponent } from './table-input/table-input.component';
 
 
 
@@ -17,7 +18,8 @@ import { TableComponent } from './table/table.component';
     HijoComponent,
     TodoComponent,
     TodoListComponent,
-    TableComponent
+    TableComponent,
+    TableInputComponent
   ],
   imports: [
     FormsModule,
@@ -29,7 +31,8 @@ import { TableComponent } from './table/table.component';
     HijoComponent,
     TodoComponent,
     TodoListComponent,
-    TableComponent
+    TableComponent,
+    TableInputComponent
   ]
 })
 export class ComponentsModule { }
