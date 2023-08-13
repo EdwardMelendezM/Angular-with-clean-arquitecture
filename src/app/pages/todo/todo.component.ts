@@ -30,6 +30,7 @@ export class TodoComponent {
   }
 
   onAdd(){
+    if(this.inputValue.trim().length<3) return ;
     let newTodo = {
       id:crypto.randomUUID(),
       text: this.inputValue,
@@ -40,6 +41,7 @@ export class TodoComponent {
   }
 
   onDelete(id:string){
+    if(this.dataList.length==1) return 
     this.dataList=[...this.dataList.filter((item)=>item.id!==id)]
   }
 }
