@@ -6,6 +6,7 @@ import { HijoComponent } from './hijo/hijo.component';
 import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -15,7 +16,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     FooterComponent,
     HijoComponent,
     TodoComponent,
-    TodoListComponent
+    TodoListComponent,
+    TableComponent
   ],
   imports: [
     FormsModule,
@@ -26,7 +28,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     FooterComponent,
     HijoComponent,
     TodoComponent,
-    TodoListComponent
+    TodoListComponent,
+    TableComponent
   ]
 })
 export class ComponentsModule { }

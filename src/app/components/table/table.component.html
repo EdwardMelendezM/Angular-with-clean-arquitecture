@@ -1,0 +1,27 @@
+<div class="w-full overflow-x-auto mt-11">
+  <table class="min-w-full bg-white border rounded-lg shadow-md">
+    <thead>
+      <tr class="bg-gray-100 text-gray-600 uppercase text-xs leading-normal">
+        <th class="py-3 px-6 text-left">ID</th>
+        <th class="py-3 px-6 text-left">Name</th>
+        <th
+          (click)="sortTableByAge()"
+          class="py-3 px-6 text-center hover:text-gray-500 hover:cursor-pointer">
+          Age
+          <span class="text-gray-400 w-4 h-4">&#8597;</span>
+        </th>
+        <th class="py-3 px-6 text-center">Actions</th>
+      </tr>
+    </thead>
+    <tbody class="text-gray-600 text-sm font-light">
+      <tr *ngFor="let user of users" class="border-b border-gray-200 hover:bg-gray-100">
+        <td class="py-3 px-6">{{ user.email }}</td>
+        <td class="py-3 px-6">{{ user.name.first }}</td>
+        <td class="py-3 px-6 text-center">{{ user.dob.age }}</td>
+        <td class="py-3 px-6 text-center">
+          <img src="{{ user.picture.medium }}" alt="profile" class="w-15 h-15 rounded-full mx-auto">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -5,7 +5,7 @@
     *ngFor="let item of dataList; let i = index; trackBy:trackByFn"
   >
     <div
-      class="w-full"
+      class="w-full truncate"
       *ngIf="!item.editing else editTemplate">
       {{item.text}}
     </div>
