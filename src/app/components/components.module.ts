@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TableComponent } from './table/table.component';
 import { TableInputComponent } from './table-input/table-input.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -24,6 +25,7 @@ import { TableInputComponent } from './table-input/table-input.component';
   imports: [
     FormsModule,
     CommonModule,
+    RouterModule
   ],
   exports:[
     NavbarComponent,

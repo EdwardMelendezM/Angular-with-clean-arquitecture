@@ -24,7 +24,7 @@ export class TableComponent {
 
   performSearch(term:string){
 
-    if(term===""){
+    if(term.length<2){
       this.users=this.originalUsers
     }
     else{
