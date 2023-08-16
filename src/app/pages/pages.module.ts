@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 import { TodoComponent } from './todo/todo.component';
 import { UsersComponent } from './users/users.component';
+import { DbzComponent } from './dbz/dbz.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -12,11 +14,13 @@ import { UsersComponent } from './users/users.component';
   declarations: [
     HomeComponent,
     TodoComponent,
-    UsersComponent
+    UsersComponent,
+    DbzComponent
   ],
   imports: [
     CommonModule,
     ComponentsModule,
+    FormsModule
   ]
 })
 export class PagesModule { }

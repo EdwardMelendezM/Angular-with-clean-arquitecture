@@ -1,0 +1,35 @@
+<div class="px-6 py-8">
+  <div
+    class="flex flex-col py-3"
+    *ngFor="let personaje of personajes"
+    >
+      <div class="flex flex-col">
+        <span>Nombre:{{personaje.nombre}}</span>
+        <span>Poder :{{personaje.poder | number}}</span>
+      </div>
+  </div>
+  <form
+    (ngSubmit)="agregar()"
+    class="flex flex-col gap-y-4 gap-x-2"
+  >
+    <input
+      class="px-2 py-1"
+      type="text"
+      placeholder="Nombre"
+      name="nombre"
+      [(ngModel)]="nuevo.nombre"
+    >
+          <!-- [value]="nuevo.nombre"
+                (input)="cambiarNombre($event)" -->
+    <input
+      class="px-2 py-1"
+      type="text"
+      placeholder="Poder"
+      name="poder"
+      [(ngModel)]="nuevo.poder"
+    >
+    <button type="submit">
+      Agregar   
+    </button>
+  </form>
+</div>
