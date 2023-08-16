@@ -8,16 +8,24 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class HomeComponent {
   
-  nombre:string = "Pedroo";
+  nombre:string = "Soy Juan";
+  haCambiado:boolean= false
 
   constructor(private dataService:DataService){}
 
-  cambiarNombre(){
-    this.nombre="Cambiando a Juan"
+  cambiarNombreToJuan(){
+    this.nombre="Soy Pedro"
     this.dataService.nombreUsuario=this.nombre
+    this.haCambiado = !this.haCambiado
+  }
+  cambiarNombreToPedro(){
+    this.nombre = "Soy Juan"
+    this.haCambiado = !this.haCambiado
+
   }
   hijoCambioNombre(nuevoNombre:string){
     this.dataService.nombreUsuario=nuevoNombre
     this.nombre=nuevoNombre
+
   }
 }

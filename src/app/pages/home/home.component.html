@@ -3,10 +3,17 @@
   <hr>
   <h3>{{nombre}}</h3>
   <button
-    (click)="cambiarNombre()"
+    *ngIf="haCambiado; else buttonCambiar"
+    (click)="cambiarNombreToJuan()"
   >
-    Cambiar nombre
+    Cambiar nombre a Pedro
   </button>
+  <ng-template #buttonCambiar>
+    <button (click)="cambiarNombreToPedro()">
+      Cambiar nombre a Juan
+    </button>
+  </ng-template>
+
   <hr>
   <app-hijo
     [nombreHijo]="nombre"
