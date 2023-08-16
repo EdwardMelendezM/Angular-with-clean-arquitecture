@@ -1,0 +1,19 @@
+<form
+  (ngSubmit)="agregarNuevo()"
+  class="flex flex-col gap-y-4 gap-x-2">
+  <input
+    class="px-2 py-1"
+    type="text"
+    placeholder="Nombre"
+    name="nombre"
+    [(ngModel)]="nuevo.nombre">
+  <input
+    class="px-2 py-1"
+    type="text"
+    placeholder="Poder"
+    name="poder"
+    [(ngModel)]="nuevo.poder">
+  <button type="submit">
+    Agregar
+  </button>
+</form>
