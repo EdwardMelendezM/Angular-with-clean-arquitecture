@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { DbzServices } from '../../services/dbz.service';
 import { Personaje } from '../../interfaces/dbz.interface';
 
 @Component({
@@ -7,14 +8,20 @@ import { Personaje } from '../../interfaces/dbz.interface';
   styleUrls: ['./dbz-form.component.css']
 })
 export class DbzFormComponent {
-  @Input() nuevo:Personaje = {
-    nombre:"",
-    poder:0,
-  }
 
-  @Output() agregar = new EventEmitter()
+  nuevo:Personaje = {
+    nombre:"Maestro Roshi",
+    poder:111000
+  }
 
   agregarNuevo(){
-    this.agregar.emit()
+    this.dbzService.agregarPersonaje(this.nuevo)
+    this.nuevo={
+      nombre:"",
+      poder:0
+    }
   }
+
+  constructor( private dbzService:DbzServices){}
+
 }
