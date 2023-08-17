@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Personaje } from '../../dbz.component';
+import { Personaje } from '../../interfaces/dbz.interface';
 
 @Component({
   selector: 'app-dbz-form',

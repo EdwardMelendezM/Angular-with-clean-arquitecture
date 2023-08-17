@@ -8,6 +8,7 @@ import { DbzComponent } from './dbz/dbz.component';
 import { FormsModule } from '@angular/forms';
 import { DbzListComponent } from './dbz/components/dbz-list/dbz-list.component';
 import { DbzFormComponent } from './dbz/components/dbz-form/dbz-form.component';
+import { DbzServices } from './dbz/services/dbz.service';
 
 
 
@@ -25,6 +26,9 @@ import { DbzFormComponent } from './dbz/components/dbz-form/dbz-form.component';
     CommonModule,
     ComponentsModule,
     FormsModule
+  ],
+  providers: [
+    DbzServices
   ]
 })
 export class PagesModule { }

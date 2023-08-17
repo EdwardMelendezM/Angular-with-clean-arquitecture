@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
+import { Personaje } from './interfaces/dbz.interface';
+import { DbzServices } from './services/dbz.service';
 
-export interface Personaje{
-  nombre:string
-  poder:number
-}
+
 
 @Component({
   selector: 'app-dbz',
@@ -35,6 +34,10 @@ export class DbzComponent {
       nombre: "",
       poder: 0
     }
+  }
+
+  constructor( private dbzService:DbzServices){
+    
   }
 
 }
