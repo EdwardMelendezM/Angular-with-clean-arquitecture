@@ -1,3 +1,11 @@
-<div class="bg-gray-800 text-white w-1/5 p-4">
-  Este es el sidebar
-</div>
+<div class="bg-gray-800 text-white w-1/5 p-3">
+  <div class="text-2xl text-center font-medium">
+    GitsApp
+  </div>
+
+  <button
+    class="w-[180px] px-4 py-1 mt-2 rounded-xl bg-slate-100 text-gray-800 truncate text-left"
+    *ngFor="let tag of tags">
+    {{tag}}
+  </button>
+</div>  
