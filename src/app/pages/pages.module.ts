@@ -12,6 +12,7 @@ import { DbzServices } from './dbz/services/dbz.service';
 import { GitAppComponent } from './git-app/pages/git-app.component';
 import { SearchBoxComponent } from './git-app/components/search-box/search-box.component';
 import { CardListComponent } from './git-app/components/card-list/card-list.component';
+import { SidebarComponent } from '../components/sidebar/sidebar.component';
 
 
 
@@ -26,7 +27,9 @@ import { CardListComponent } from './git-app/components/card-list/card-list.comp
     DbzFormComponent,
     GitAppComponent,
     SearchBoxComponent,
-    CardListComponent
+    CardListComponent,
+    SidebarComponent
+
   ],
   imports: [
     CommonModule,

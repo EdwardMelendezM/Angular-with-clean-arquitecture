@@ -9,6 +9,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { TableComponent } from './table/table.component';
 import { TableInputComponent } from './table-input/table-input.component';
 import { RouterModule } from '@angular/router';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -20,7 +21,7 @@ import { RouterModule } from '@angular/router';
     TodoComponent,
     TodoListComponent,
     TableComponent,
-    TableInputComponent
+    TableInputComponent,
   ],
   imports: [
     FormsModule,
@@ -34,7 +35,7 @@ import { RouterModule } from '@angular/router';
     TodoComponent,
     TodoListComponent,
     TableComponent,
-    TableInputComponent
+    TableInputComponent,
   ]
 })
 export class ComponentsModule { }
