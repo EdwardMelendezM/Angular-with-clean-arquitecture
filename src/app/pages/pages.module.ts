@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { DbzListComponent } from './dbz/components/dbz-list/dbz-list.component';
 import { DbzFormComponent } from './dbz/components/dbz-form/dbz-form.component';
 import { DbzServices } from './dbz/services/dbz.service';
+import { GitAppComponent } from './git-app/pages/git-app.component';
+import { SearchBoxComponent } from './git-app/components/search-box/search-box.component';
+import { CardListComponent } from './git-app/components/card-list/card-list.component';
 
 
 
@@ -20,7 +23,10 @@ import { DbzServices } from './dbz/services/dbz.service';
     UsersComponent,
     DbzComponent,
     DbzListComponent,
-    DbzFormComponent
+    DbzFormComponent,
+    GitAppComponent,
+    SearchBoxComponent,
+    CardListComponent
   ],
   imports: [
     CommonModule,

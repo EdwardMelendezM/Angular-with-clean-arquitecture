@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TodoComponent } from './pages/todo/todo.component';
 import { UsersComponent } from './pages/users/users.component';
 import { DbzComponent } from './pages/dbz/dbz.component';
+import { GitAppComponent } from './pages/git-app/pages/git-app.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,10 @@ const routes: Routes = [
     path: 'dbz', component: DbzComponent
   },
   {
-    path:"**", pathMatch:'full' ,redirectTo:'todo'
+    path: 'git-app', component: GitAppComponent
+  },
+  {
+    path:"**", pathMatch:'full' ,redirectTo:'home'
   }
 ];
 
