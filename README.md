@@ -1,27 +1,8 @@
-# Todo
+# Clean Arquitecture
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Domain - Capa de dominio
+La carpeta "domain" en Clean Architecture se utiliza para albergar la lógica del negocio y las reglas del dominio de tu aplicación. Es el núcleo de tu aplicación y debería ser independiente de las tecnologías externas, la interfaz de usuario y el almacenamiento de datos. Aquí se definen los conceptos y las reglas de negocio que son esenciales para tu aplicación.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##  Data - Capa de datos
+En Clean Architecture, la capa de datos es responsable de interactuar con el almacenamiento de datos, como bases de datos, servicios web, archivos, etc. Esta capa maneja la persistencia y recuperación de datos y es independiente de las capas de presentación y dominio. Mantener esta capa separada ayuda a garantizar que los detalles técnicos relacionados con el almacenamiento de datos no afecten la lógica del negocio y la interfaz de usuario.
