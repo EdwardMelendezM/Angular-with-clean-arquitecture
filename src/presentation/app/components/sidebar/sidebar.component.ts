@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GifsService } from 'src/app/pages/git-app/services/gifs.service';
+import { GifsService } from '../../../app/pages/git-app/services/gifs.service';
 
 @Component({
   selector: 'app-sidebar',

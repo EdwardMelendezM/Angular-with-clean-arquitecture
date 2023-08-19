@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
+import { DataService } from '../../../app/services/data.service';
 
 @Component({
   selector: 'app-navbar',
