@@ -15,7 +15,7 @@ export abstract class UserRespository{
   abstract register(params:{
     username:string,
     password:string,
-    name:string
+    fullName:string
   }) : Observable<UserModel>
 
   abstract getUserProfile(): Observable<UserModel>
