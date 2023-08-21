@@ -66,5 +66,11 @@ export class GifsService {
       this._gifList=resp.data
     })
   }
+
+  deleteTag(tagDelete:string):void{
+    this._tagsHistory = [...this._tagsHistory.filter(tag => tag !== tagDelete)]
+    this.saveLocalStorage();
+    this.loadFirstGifs();
+  }
   
 }
