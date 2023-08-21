@@ -1,9 +1,6 @@
-<div class="h-screen flex">
-  <div class="bg-gray-800 text-white w-1/5 p-4">
-      <app-sidebar></app-sidebar>
-
-  </div>
-  <div class="flex-1 p-4">
+<div class="h-screen flex w-screen">
+  <app-sidebar></app-sidebar>
+  <div class="w-full">
     <app-search-box></app-search-box>
     <app-card-list [gifs]="gifs" ></app-card-list>
   </div>
