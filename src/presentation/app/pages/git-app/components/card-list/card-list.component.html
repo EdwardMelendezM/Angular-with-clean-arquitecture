@@ -1,3 +1,6 @@
 <div class="px-11 py-2 flex flex-wrap gap-x-2 gap-y-2 overflow-hidden">
-  <app-gifs-card [gifs]="gifs" ></app-gifs-card>
+  <div *ngFor="let gif of gifs" class="flex flex-row overflow-y-auto">
+    <app-gifs-card  [gif]="gif" ></app-gifs-card> 
+  </div>
+
 </div>

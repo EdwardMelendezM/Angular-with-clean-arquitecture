@@ -1,0 +1,14 @@
+<div class="d-flex justify-center items-center">
+
+  
+  <img
+    [src]="url"
+    [alt]="alt"
+    class="object-cover animate__animated animate__fadeIn"
+    (load)="onLoad()"
+    [ngStyle]="{display: hasLoaded?'':'none'}"
+  />
+
+  <img *ngIf="!hasLoaded" src="/src/presentation/assets/loader.svg" alt="loader" />
+  
+</div>

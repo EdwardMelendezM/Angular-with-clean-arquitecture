@@ -1,12 +1,15 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Gif } from '../../interfaces/git-app.interface';
 
 @Component({
   selector: 'app-card-list',
   templateUrl: './card-list.component.html',
 })
-export class CardListComponent {
+export class CardListComponent implements OnInit {
 
-@Input() public gifs: Gif[]=[]
+  @Input() public gifs: Gif[]=[]
 
+  ngOnInit(): void {
+    if(!this.gifs) throw new Error("Gif property is required")
+  }
 }
