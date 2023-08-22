@@ -13,6 +13,7 @@ import { GitAppComponent } from './git-app/pages/git-app.component';
 import { SearchBoxComponent } from './git-app/components/search-box/search-box.component';
 import { CardListComponent } from './git-app/components/card-list/card-list.component';
 import { SidebarComponent } from '../components/sidebar/sidebar.component';
+import { GifsCardComponent } from './git-app/components/gifs-card/gifs-card.component';
 
 
 
@@ -23,12 +24,14 @@ import { SidebarComponent } from '../components/sidebar/sidebar.component';
     TodoComponent,
     UsersComponent,
     DbzComponent,
-    DbzListComponent,
+    DbzListComponent, 
     DbzFormComponent,
     GitAppComponent,
     SearchBoxComponent,
     CardListComponent,
-    SidebarComponent
+    SidebarComponent,
+    GifsCardComponent
+
 
   ],
   imports: [

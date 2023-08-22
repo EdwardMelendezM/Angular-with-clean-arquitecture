@@ -1,0 +1,12 @@
+<div *ngFor="let gif of gifs" class="flex flex-row overflow-y-auto">
+  <div class="rounded-xl flex flex-row justify-center items-center gap-y-4 bg-gray-800 py-3 px-3">
+    <div class="w-44 flex flex-col">
+
+      <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="object-cover">
+
+      <div class="text-gray-50 text-sm text-center">
+        {{gif.title}}
+      </div>
+    </div>
+  </div>
+</div>
